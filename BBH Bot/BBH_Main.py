@@ -1,5 +1,4 @@
 import discord
-import os
 import random
 
 client = discord.Client()
@@ -19,4 +18,4 @@ async def on_message(message):
                  "STOP IT YOU MUFFIN"]
     await message.channel.send(f'{random.choice(responses)}!')
 
-client.run(os.getenv('TOKEN'))
+client.run('TOKEN')
